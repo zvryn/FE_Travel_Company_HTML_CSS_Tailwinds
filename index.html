@@ -62,7 +62,7 @@
   <body>
     <header class="flex flex-col">
       <div
-        class="relative h-[1043px] w-full bg-hero-pattern bg-cover bg-top sm:h-[650px]"
+        class="relative h-[1043px] w-full bg-hero-pattern bg-cover bg-top sm:h-[800px]"
       >
         <div
           class="absolute inset-0 bg-gradient-to-l from-white via-white/85 to-transparent opacity-100"
@@ -70,8 +70,10 @@
         <div
           class="absolute inset-0 bg-gradient-to-b from-white via-white/60 to-transparent opacity-100"
         ></div>
+
+        <!--Navigation Bar-->
         <nav
-          class="flex justify-between items-center h-[120px] py-6 px-8 relative z-10 sm:px-16 w-full"
+          class="flex justify-between items-center h-[120px] py-6 px-8 relative z-10 sm:px-16 w-full lg:px-40"
         >
           <!-- Logo -->
           <h1 class="font-poppins text-3xl font-bold">
@@ -114,25 +116,68 @@
             <img
               src="./assets/icon-menu.svg"
               alt="menu"
-              class="w-[20px] h-[20px] bg-center bg-cover"
+              class="w-[20px] h-[20px] object-center object-cover"
             />
           </a>
         </nav>
+
+        <!--Hero Section-->
+
         <section
-          class="flex flex-col justify-start items-center relative z-10 p-8 sm:flex-row-reverse sm:px-16"
+          class="flex flex-col justify-start items-center relative z-10 p-8 sm:flex-row-reverse sm:px-16 lg:px-40"
         >
-          <div>
+          <div class="relative 2xl:-ml-[500px]">
             <img
               src="./assets/sun-1.png"
               alt="sun1"
-              class="w-64 bg-cover bg-center sm:w-[592px]"
+              class="w-[320px] object-cover object-center sm:w-[600px]"
             />
+
+            <!--Picture Card-->
+            <div
+              class="absolute w-auto h-auto top-1/4 -left-8 bg-white rounded-[15px] flex flex-col justify-between items-center py-3 px-3 shadow-lg lg:-left-16"
+            >
+              <img
+                src="./assets/mountain-scot.jpg"
+                alt="mountain-scot"
+                class="w-32 h-20 rounded-[7px] object-cover mb-3"
+              />
+              <p class="text-black text-sm mb-3 font-sans font-medium w-full">
+                Mountain Scot
+              </p>
+              <div class="flex flex-row">
+                <img
+                  src="./assets/people-1.jpg"
+                  alt="people1"
+                  class="w-9 h-9 rounded-full z-10 object-cover border-white border-2"
+                />
+                <img
+                  src="./assets/people-2.jpg"
+                  alt="people2"
+                  class="w-9 h-9 rounded-full z-20 object-cover -ml-2 border-white border-2"
+                />
+                <img
+                  src="./assets/people-3.jpg"
+                  alt="people3"
+                  class="w-9 h-9 rounded-full z-30 object-cover -ml-2 border-white border-2"
+                />
+                <div
+                  class="w-9 h-9 bg-gray-300 rounded-full -ml-2 flex justify-center items-center text-black z-40 border-white border-2"
+                >
+                  +
+                </div>
+              </div>
+            </div>
           </div>
           <div>
-            <h1 class="font-paytone text-black font-normal text-3xl mt-8">
+            <h1
+              class="font-paytone text-black font-normal text-3xl mt-8 sm:text-5xl lg:text-8xl"
+            >
               Fuel Mind <br />by Travel
             </h1>
-            <p class="font-sans text-secondary font-normal text-xl mt-5 pr-5">
+            <p
+              class="font-sans text-secondary font-normal text-xl mt-5 pr-5 lg:pr-72 sm:pr-20 sm:text-sm lg:text-lg 2xl:pr-[700px]"
+            >
               Enthusiastically extend extensive customer service before best
               breed convergence completely.
             </p>
