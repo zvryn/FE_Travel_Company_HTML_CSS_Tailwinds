@@ -61,18 +61,26 @@
   </head>
   <body>
     <header class="flex flex-col">
-      <div class="relative h-[650px] w-full bg-hero-pattern bg-cover bg-top">
+      <div
+        class="relative h-[1043px] w-full bg-hero-pattern bg-cover bg-top sm:h-[650px]"
+      >
         <div
           class="absolute inset-0 bg-gradient-to-l from-white via-white/85 to-transparent opacity-100"
         ></div>
+        <div
+          class="absolute inset-0 bg-gradient-to-b from-white via-white/60 to-transparent opacity-100"
+        ></div>
         <nav
-          class="flex justify-between items-center h-[120px] py-6 px-8 relative z-10 md:px-16 w-full lg:ml-36"
+          class="flex justify-between items-center h-[120px] py-6 px-8 relative z-10 sm:px-16 w-full"
         >
+          <!-- Logo -->
           <h1 class="font-poppins text-3xl font-bold">
             Tripp<span class="text-primary">.</span>
           </h1>
+
+          <!-- Nav Links -->
           <div
-            class="hidden justify-between w-1/3 font-sans text-secondary lg:flex"
+            class="hidden lg:flex justify-center space-x-12 font-sans text-secondary"
           >
             <a
               href="#"
@@ -95,17 +103,41 @@
               >Tour Package</a
             >
           </div>
+
+          <!-- Contact Us Button  -->
           <div class="hidden lg:flex">
             <button class="btn-primary">Contact Us</button>
           </div>
-          <a href="#">
+
+          <!-- Mobile Menu Icon -->
+          <a href="#" class="lg:hidden">
             <img
-              src="./assets/icon-menu.png"
+              src="./assets/icon-menu.svg"
               alt="menu"
-              class="w-[20px] h-[20px] bg-center bg-cover lg:hidden"
-          /></a>
+              class="w-[20px] h-[20px] bg-center bg-cover"
+            />
+          </a>
         </nav>
-        <section></section>
+        <section
+          class="flex flex-col justify-start items-center relative z-10 p-8 sm:flex-row-reverse sm:px-16"
+        >
+          <div>
+            <img
+              src="./assets/sun-1.png"
+              alt="sun1"
+              class="w-64 bg-cover bg-center sm:w-[592px]"
+            />
+          </div>
+          <div>
+            <h1 class="font-paytone text-black font-normal text-3xl mt-8">
+              Fuel Mind <br />by Travel
+            </h1>
+            <p class="font-sans text-secondary font-normal text-xl mt-5 pr-5">
+              Enthusiastically extend extensive customer service before best
+              breed convergence completely.
+            </p>
+          </div>
+        </section>
         <section></section>
       </div>
     </header>
