@@ -509,11 +509,13 @@
 
     <!--Destination Section-->
     <section
-      class="flex flex-col justify-start items-center px-8 py-12 bg-cream gap-5"
+      class="flex flex-col justify-start items-center px-8 py-20 bg-cream gap-5 sm:px-16 lg:pr-40 lg:pl-0 lg:flex-row-reverse"
     >
       <!--Destination Content-->
-      <div class="flex flex-col w-full">
-        <h1 class="font-poppins text-2xl text-black font-bold mb-5">
+      <div class="flex flex-col w-full lg:ml-5 2xl:ml-28">
+        <h1
+          class="font-poppins text-2xl text-black font-bold mb-5 lg:text-4xl lg:mb-10"
+        >
           Most Popular <br />
           Destination of Us!
         </h1>
@@ -522,58 +524,107 @@
           users. Uniquely simplify mission-critical benefits with cross-unit
           manufactured products. Energistically re-engineer
         </p>
-      </div>
-      <!--Destination Card 1 -->
-      <div
-        class="relative rounded-[20px] w-full h-[500px] bg-cover bg-center flex flex-col justify-end p-8"
-        style="background-image: url('./assets/place-greatwall.jpg')"
-      >
-        <div
-          class="absolute inset-0 bg-black bg-opacity-30 rounded-[20px]"
-        ></div>
-        <div class="flex text-white justify-between items-center">
-          <div>
-            <h1 class="font-poppins font-semibold text-xl">
-              Great Wall of China
-            </h1>
-            <p class="font-sans text-[18px]">Beijing China</p>
-          </div>
-          <div class="font-poppins font-semibold">4.8 ★</div>
+
+        <!-- View All Button -->
+        <div class="hidden lg:flex mt-10">
+          <button class="btn-primary">
+            <a href="#">View All</a>
+            <img
+              src="./assets/arrow-right.svg"
+              alt="arrow-right"
+              class="w-[21px] h-[13px] object-cover object-center ml-5"
+            />
+          </button>
         </div>
       </div>
 
-      <!--Destination Card 2 -->
-      <div
-        class="relative rounded-[20px] w-full h-[500px] bg-cover bg-center flex-col justify-end p-8 hidden"
-        style="background-image: url('./assets/place-lakepowell.jpg')"
-      >
+      <!-- Destination Cards -->
+      <div class="lg:flex lg:gap-5 lg:-ml-36 sm:w-full">
+        <!--Destination Card 1 -->
         <div
-          class="absolute inset-0 bg-black bg-opacity-30 rounded-[20px]"
-        ></div>
-        <div class="flex text-white justify-between items-center">
-          <div>
-            <h1 class="font-poppins font-semibold text-xl">Lake Powell</h1>
-            <p class="font-sans text-[18px]">U.S.A</p>
+          class="relative rounded-[20px] w-full h-[500px] bg-cover bg-center flex flex-col justify-end p-8 lg:h-[450px] lg:w-[332px]"
+          style="background-image: url('./assets/place-greatwall.jpg')"
+        >
+          <div
+            class="absolute inset-0 bg-black bg-opacity-30 rounded-[20px]"
+          ></div>
+          <div class="flex text-white justify-between items-center z-10">
+            <div>
+              <h1 class="font-poppins font-semibold text-xl">
+                Great Wall of China
+              </h1>
+              <p class="font-sans text-[18px]">Beijing China</p>
+            </div>
+            <div class="font-poppins font-semibold">4.8 ★</div>
           </div>
-          <div class="font-poppins font-semibold">4.8 ★</div>
+        </div>
+
+        <!--Destination Card 2 -->
+        <div
+          class="relative rounded-[20px] w-full h-[500px] bg-cover bg-center flex-col justify-end p-8 hidden lg:flex lg:h-[450px] lg:w-[332px] lg:-mt-10"
+          style="background-image: url('./assets/place-lakepowell.jpg')"
+        >
+          <div
+            class="absolute inset-0 bg-black bg-opacity-30 rounded-[20px]"
+          ></div>
+          <div class="flex text-white justify-between items-center z-10">
+            <div>
+              <h1 class="font-poppins font-semibold text-xl">Lake Powell</h1>
+              <p class="font-sans text-[18px]">U.S.A</p>
+            </div>
+            <div class="font-poppins font-semibold">4.8 ★</div>
+          </div>
+          <!-- Slide Button Large Device-->
+          <div
+            class="justify-center items-center gap-5 w-full hidden sm:hidden lg:flex absolute -bottom-16 left-0"
+          >
+            <img
+              src="./assets/arrow-left.svg"
+              alt="arrow-left"
+              class="w-[32px] h-[32px] object-cover object-center cursor-pointer"
+            />
+            <img
+              src="./assets/arrow-right-2.svg"
+              alt="arrow-right-2"
+              class="w-[48px] h-[48px] object-cover object-center cursor-pointer"
+            />
+          </div>
+        </div>
+
+        <!--Destination Card 3 -->
+        <div
+          class="relative rounded-[20px] w-full h-[500px] bg-cover bg-center hidden flex-col justify-end p-8 lg:flex lg:h-[450px] lg:w-[332px]"
+          style="background-image: url('./assets/place-deepcreek.jpg')"
+        >
+          <div
+            class="absolute inset-0 bg-black bg-opacity-30 rounded-[20px]"
+          ></div>
+          <div class="flex text-white justify-between items-center z-10">
+            <div>
+              <h1 class="font-poppins font-semibold text-xl">
+                Deep Creek Lake
+              </h1>
+              <p class="font-sans text-[18px]">Maryland</p>
+            </div>
+            <div class="font-poppins font-semibold">4.8 ★</div>
+          </div>
         </div>
       </div>
 
-      <!--Destination Card 3 -->
+      <!-- Slide Button Large Device-->
       <div
-        class="relative rounded-[20px] w-full h-[500px] bg-cover bg-center hidden flex-col justify-end p-8"
-        style="background-image: url('./assets/place-deepcreek.jpg')"
+        class="justify-center items-center gap-5 w-full hidden sm:flex lg:hidden"
       >
-        <div
-          class="absolute inset-0 bg-black bg-opacity-30 rounded-[20px]"
-        ></div>
-        <div class="flex text-white justify-between items-center">
-          <div>
-            <h1 class="font-poppins font-semibold text-xl">Deep Creek Lake</h1>
-            <p class="font-sans text-[18px]">Maryland</p>
-          </div>
-          <div class="font-poppins font-semibold">4.8 ★</div>
-        </div>
+        <img
+          src="./assets/arrow-left.svg"
+          alt="arrow-left"
+          class="w-[32px] h-[32px] object-cover object-center cursor-pointer"
+        />
+        <img
+          src="./assets/arrow-right-2.svg"
+          alt="arrow-right-2"
+          class="w-[48px] h-[48px] object-cover object-center cursor-pointer"
+        />
       </div>
 
       <!-- Slide Button Mobile-->
@@ -595,11 +646,9 @@
         </div>
       </div>
 
-      <!-- Slide Button Large Device-->
-
       <!-- View All Button -->
-      <div class="mt-6">
-        <button class="btn-primary mt-3 sm:mt-0 sm:ml-10">
+      <div class="lg:hidden">
+        <button class="btn-primary">
           <a href="#">View All</a>
           <img
             src="./assets/arrow-right.svg"
