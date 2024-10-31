@@ -34,6 +34,7 @@
             backgroundImage: {
               "hero-pattern": "url(./assets/bg-hero.png)",
               "footer-pattern": "url(./assets/bg-footer.png)",
+              "map-pattern": "url(./assets/flag-map.png)",
             },
           },
         },
@@ -690,6 +691,67 @@
           alt="arrow-double-2"
           class="w-[112px] h-[48px] cursor-pointer"
         />
+      </div>
+    </section>
+
+    <!--Places Section-->
+    <section
+      class="flex flex-col justify-center items-center p-8 sm:px-16 lg:px-40"
+    >
+      <h1 class="font-bold font-poppins text-2xl text-center lg:text-3xl">
+        World Top Visiting <br />Place in 2021
+      </h1>
+      <div class="relative">
+        <img
+          src="./assets/flag-map.png"
+          alt="map"
+          class="w-full h-auto object-cover object-center mt-10 lg:mt-16"
+        />
+
+        <!--Australia Flag-->
+        <div
+          class="absolute bottom-10 right-8 flex flex-col h-auto justify-center items-center sm:right-16 sm:bottom-16 lg:right-36 lg:bottom-28 2xl:right-48 2xl:bottom-40"
+        >
+          <img
+            src="./assets/flag-australia.png"
+            alt="flag-australia"
+            class="w-10 h-10 object-cover object-center border-2 border-white sm:w-16 sm:h-16 rounded-full"
+          />
+          <p class="font-poppins text-xl font-semibold hidden sm:flex">
+            Australia
+          </p>
+          <p class="font-sans text-secondary hidden sm:flex">02 Tour</p>
+        </div>
+
+        <!--France Flag-->
+        <div
+          class="absolute bottom-24 right-32 flex flex-col justify-center items-center sm:right-64 sm:bottom-36 lg:right-[450px] lg:bottom-80 2xl:right-[700px] 2xl:top-40"
+        >
+          <img
+            src="./assets/flag-france.png"
+            alt="flag-france"
+            class="w-10 h-10 object-cover object-center border-2 border-white sm:w-16 sm:h-16 rounded-full"
+          />
+          <p class="font-poppins text-xl font-semibold hidden sm:flex">
+            France
+          </p>
+          <p class="font-sans text-secondary hidden sm:flex">03 Tour</p>
+        </div>
+
+        <!--Mexico Flag-->
+        <div
+          class="absolute bottom-20 left-8 flex flex-col justify-center items-center sm:left-12 sm:bottom-28 lg:left-36 lg:bottom-60 2xl:left-60 2xl:top-80"
+        >
+          <img
+            src="./assets/flag-mexico.png"
+            alt="flag-mexico"
+            class="w-10 h-10 object-cover object-center border-2 border-white sm:w-16 sm:h-16 rounded-full"
+          />
+          <p class="font-poppins text-xl font-semibold hidden sm:flex">
+            Mexico
+          </p>
+          <p class="font-sans text-secondary hidden sm:flex">03 Tour</p>
+        </div>
       </div>
     </section>
   </body>
