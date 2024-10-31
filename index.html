@@ -757,7 +757,7 @@
 
     <!--Footer Section-->
     <section
-      class="relative h-[562] w-full bg-footer-pattern bg-cover bg-top flex flex-col justify-start items-start p-8"
+      class="relative h-[562] w-full bg-footer-pattern bg-cover bg-top flex flex-col justify-start items-start p-8 pt-28 sm:px-16 lg:px-40"
     >
       <!--"White Background Overlay-->
       <div
@@ -766,15 +766,17 @@
       <div
         class="absolute inset-0 bg-gradient-to-b from-white via-white/70 to-transparent opacity-100"
       ></div>
-      <div class="z-10 text-black font-poppins font-bold text-3xl">
-        <h1>Subscribe for every Tour News & Tips</h1>
+      <div
+        class="z-10 text-black font-poppins font-bold text-3xl pr-10 sm:w-1/2"
+      >
+        <h1>Subscribe <br />for every Tour News & Tips</h1>
       </div>
 
       <!--Form Subscribe-->
 
       <form
         action=""
-        class="flex justify-between items-center z-10 w-full px-5 h-20 border rounded-[20px] shadow-lg bg-white"
+        class="flex justify-between items-center z-10 w-full px-5 h-20 border rounded-[20px] shadow-lg bg-white mt-10 sm:w-full lg:w-1/2"
       >
         <input
           type="email"
@@ -797,6 +799,25 @@
           />
         </button>
       </form>
+
+      <div class="z-10 mt-10 mb-3">
+        <h1 class="font-poppins text-3xl font-bold">
+          Tripp<span class="text-primary">.</span>
+        </h1>
+      </div>
+
+      <div
+        class="z-10 w-1/2 pr-4 sm:flex sm:justify-between sm:w-full sm:items-center lg:w-1/2"
+      >
+        <p class="font-sans font-medium text-black mb-3">
+          Copyright©Tripp. All right reserved
+        </p>
+        <img
+          src="assets/footer-social.png"
+          alt="footer-social"
+          class="w-52 h-auto object-contain object-center cursor-pointer"
+        />
+      </div>
     </section>
   </body>
 </html>
