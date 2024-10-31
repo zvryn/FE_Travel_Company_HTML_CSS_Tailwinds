@@ -754,5 +754,49 @@
         </div>
       </div>
     </section>
+
+    <!--Footer Section-->
+    <section
+      class="relative h-[562] w-full bg-footer-pattern bg-cover bg-top flex flex-col justify-start items-start p-8"
+    >
+      <!--"White Background Overlay-->
+      <div
+        class="absolute inset-0 bg-gradient-to-l from-white via-white/50 to-transparent opacity-100"
+      ></div>
+      <div
+        class="absolute inset-0 bg-gradient-to-b from-white via-white/70 to-transparent opacity-100"
+      ></div>
+      <div class="z-10 text-black font-poppins font-bold text-3xl">
+        <h1>Subscribe for every Tour News & Tips</h1>
+      </div>
+
+      <!--Form Subscribe-->
+
+      <form
+        action=""
+        class="flex justify-between items-center z-10 w-full px-5 h-20 border rounded-[20px] shadow-lg bg-white"
+      >
+        <input
+          type="email"
+          name="email"
+          id="email"
+          placeholder="Your Email"
+          class="h-full w-1/2 px-4 text-lg font-poppins border-none outline-none"
+          required
+        />
+
+        <button
+          class="btn-primary flex items-center gap-2 px-5 py-3 rounded-lg"
+          type="submit"
+        >
+          <p>Subscribe</p>
+          <img
+            src="assets/arrow-right.svg"
+            alt="arrow-right"
+            class="w-6 h-6 object-cover object-center"
+          />
+        </button>
+      </form>
+    </section>
   </body>
 </html>
