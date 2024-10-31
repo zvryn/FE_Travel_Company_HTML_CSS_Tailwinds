@@ -23,6 +23,7 @@
               tertiary: "#A8A8A8",
               soft: "rgba(254, 91, 62, 0.1)",
               cream: "#FEF9F3",
+              brown: "#625858",
             },
             fontFamily: {
               sans: ["DM Sans", "sans-serif"],
@@ -507,5 +508,106 @@
     </section>
 
     <!--Destination Section-->
+    <section
+      class="flex flex-col justify-start items-center px-8 py-12 bg-cream gap-5"
+    >
+      <!--Destination Content-->
+      <div class="flex flex-col w-full">
+        <h1 class="font-poppins text-2xl text-black font-bold mb-5">
+          Most Popular <br />
+          Destination of Us!
+        </h1>
+        <p class="font-sans font-normal text-[18px] text-brown leading-8 mb-5">
+          Credibly unleash economically sound e-business with bleeding-edge
+          users. Uniquely simplify mission-critical benefits with cross-unit
+          manufactured products. Energistically re-engineer
+        </p>
+      </div>
+      <!--Destination Card 1 -->
+      <div
+        class="relative rounded-[20px] w-full h-[500px] bg-cover bg-center flex flex-col justify-end p-8"
+        style="background-image: url('./assets/place-greatwall.jpg')"
+      >
+        <div
+          class="absolute inset-0 bg-black bg-opacity-30 rounded-[20px]"
+        ></div>
+        <div class="flex text-white justify-between items-center">
+          <div>
+            <h1 class="font-poppins font-semibold text-xl">
+              Great Wall of China
+            </h1>
+            <p class="font-sans text-[18px]">Beijing China</p>
+          </div>
+          <div class="font-poppins font-semibold">4.8 ★</div>
+        </div>
+      </div>
+
+      <!--Destination Card 2 -->
+      <div
+        class="relative rounded-[20px] w-full h-[500px] bg-cover bg-center flex-col justify-end p-8 hidden"
+        style="background-image: url('./assets/place-lakepowell.jpg')"
+      >
+        <div
+          class="absolute inset-0 bg-black bg-opacity-30 rounded-[20px]"
+        ></div>
+        <div class="flex text-white justify-between items-center">
+          <div>
+            <h1 class="font-poppins font-semibold text-xl">Lake Powell</h1>
+            <p class="font-sans text-[18px]">U.S.A</p>
+          </div>
+          <div class="font-poppins font-semibold">4.8 ★</div>
+        </div>
+      </div>
+
+      <!--Destination Card 3 -->
+      <div
+        class="relative rounded-[20px] w-full h-[500px] bg-cover bg-center hidden flex-col justify-end p-8"
+        style="background-image: url('./assets/place-deepcreek.jpg')"
+      >
+        <div
+          class="absolute inset-0 bg-black bg-opacity-30 rounded-[20px]"
+        ></div>
+        <div class="flex text-white justify-between items-center">
+          <div>
+            <h1 class="font-poppins font-semibold text-xl">Deep Creek Lake</h1>
+            <p class="font-sans text-[18px]">Maryland</p>
+          </div>
+          <div class="font-poppins font-semibold">4.8 ★</div>
+        </div>
+      </div>
+
+      <!-- Slide Button Mobile-->
+      <div class="flex space-x-3 sm:hidden">
+        <div
+          class="w-5 h-5 rounded-full bg-cream flex justify-center items-center border-gray-500 border cursor-pointer"
+        >
+          <div class="w-3 h-3 rounded-full bg-gray-500"></div>
+        </div>
+        <div
+          class="w-5 h-5 rounded-full bg-cream flex justify-center items-center border-primary border cursor-pointer"
+        >
+          <div class="w-3 h-3 rounded-full bg-primary"></div>
+        </div>
+        <div
+          class="w-5 h-5 rounded-full bg-cream flex justify-center items-center border-gray-500 border cursor-pointer"
+        >
+          <div class="w-3 h-3 rounded-full bg-gray-500"></div>
+        </div>
+      </div>
+
+      <!-- Slide Button Large Device-->
+
+      <!-- View All Button -->
+      <div class="mt-6">
+        <button class="btn-primary mt-3 sm:mt-0 sm:ml-10">
+          <a href="#">View All</a>
+          <img
+            src="./assets/arrow-right.svg"
+            alt="arrow-right"
+            class="w-[21px] h-[13px] object-cover object-center ml-5"
+          />
+        </button>
+      </div>
+    </section>
   </body>
 </html>
